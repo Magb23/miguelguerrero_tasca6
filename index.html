@@ -5,20 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Números primos</title>
+    <link rel="stylesheet" type="text/css" href="primos.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <script src="primos.js"></script>
 </head>
-<body>
+<body class="body">
+    <table class="table table-hover">
     <h1>Primos</h1>
     <script>
         var num=prompt("Escribe un número: ");
+        var i;
         
         if(num<1) {
-                document.write("Introduce un número igual o mayor a 1")
+                document.write("Introduce un número igual o mayor a 1");
             }
         for(var i=1; i<=num; i++) {
             
             if(primos(i)) {
-                document.write(i + ' es primo<br>');            }
+                document.write(i + ' es primo<br>');            
+            }
                     
             else {
                 document.write(i + ' no es primo<br>');
@@ -26,6 +31,7 @@
         }
         
     </script>
+    </table>
     
 </body>
 </html>

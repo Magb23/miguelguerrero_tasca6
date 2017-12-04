@@ -11,17 +11,21 @@
     <h1>Primos</h1>
     <script>
         var num=prompt("Escribe un número: ");
-        for(var i=1; i<=num; i++);
-            if(num<1) {
+        
+        if(num<1) {
                 document.write("Introduce un número igual o mayor a 1")
             }
+        for(var i=1; i<=num; i++) {
+            
+            if(primos(i)) {
+                document.write(i + ' es primo<br>');            }
+                    
             else {
-                return (num)
+                document.write(i + ' no es primo<br>');
             }
+        }
         
     </script>
-    
-
     
 </body>
 </html>
